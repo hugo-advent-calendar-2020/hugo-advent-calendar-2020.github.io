@@ -46,7 +46,7 @@
 
 </section>
 
-<section id="nav" class="d-print-none">
+<section id="nav" class="">
 
   <div class="container">
     <h1 class="site-title">2020 Advent Calendar</h1>
@@ -80,6 +80,10 @@
       
     </aside>
 
+    <aside class="d-print-none text-right">
+      <a href="#">Back to top</a>
+    </aside>
+
   </div>
 
 </section>
@@ -99,7 +103,7 @@
       <% } %>
       <p class="card-text"><%- item.description %></p>
       <% if(_.get(item, 'visiturl')) { %>
-      <a href="<%- item.visiturl %>" class="btn btn-primary" target="_blank">Visit</a>
+      <a href="<%- item.visiturl %>" class="btn btn-primary d-print-none" target="_blank">Visit</a>
       <% } %>
     </div>
   </div>
